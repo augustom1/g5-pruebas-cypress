@@ -1,0 +1,20 @@
+{
+  "name": "bookdb-cypress-final",
+  "version": "1.0.0",
+  "description": "Proyecto final Diseño y Prueba de Software - Cypress (UI + API) sobre app.bookdb.online",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run --browser chrome",
+    "test:ui": "cypress run --browser chrome --spec \"cypress/e2e/ui/**/*.cy.js\"",
+    "test:api": "cypress run --browser chrome --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "report": "mochawesome-merge \"cypress/reports/json/*.json\" -o cypress/reports/merged.json && marge cypress/reports/merged.json --inline -f reporte -o resultados",
+    "test:report": "npm test && npm run report"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^16.2.0",
+    "mochawesome": "^8.1.1",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}

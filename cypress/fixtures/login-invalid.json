@@ -1,0 +1,5 @@
+{
+  "wrongPassword": "ClaveIncorrecta123",
+  "usernameRequired": "Username is required",
+  "passwordRequired": "Password is required"
+}
